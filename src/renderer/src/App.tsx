@@ -1,14 +1,13 @@
-
+import { HashRouter as Router, Route, Routes } from 'react-router-dom'
+import Login from './pages/Login'
 
 function App(): React.JSX.Element {
-  //const ipcHandle = (): void => window.electron.ipcRenderer.send('ping')
-
   return (
-    <>
-      <h1 className="text-3xl font-bold underline">
-        Hello world!
-      </h1>
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Login />} />
+      </Routes>
+    </Router>
   )
 }
 
