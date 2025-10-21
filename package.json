@@ -14,7 +14,7 @@
     "start": "electron-vite preview",
     "dev": "electron-vite dev",
     "build": "npm run typecheck && electron-vite build",
-    "postinstall": "electron-builder install-app-deps",
+    "postinstall": "electron-builder install-app-deps && flowbite-react register",
     "build:unpack": "npm run build && electron-builder --dir",
     "build:win": "npm run build && electron-builder --win",
     "build:mac": "electron-vite build && electron-builder --mac",
@@ -25,6 +25,7 @@
     "@electron-toolkit/utils": "^4.0.0",
     "@tailwindcss/vite": "^4.1.14",
     "electron-updater": "^6.3.9",
+    "flowbite-react": "^0.12.9",
     "react-router-dom": "^7.9.4",
     "tailwindcss": "^4.1.14"
   },
