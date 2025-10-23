@@ -1,25 +1,11 @@
-import { HashRouter as Router, Route, Routes } from 'react-router-dom'
-import Login from './pages/Login'
-import Cadastro from './pages/Cadastro'
-import Recuperar from './pages/Recuperar'
-import NotFound from './pages/NotFound'
-import DashboardLayout from './components/DashboardLayout'
+import AppRoutes from "./AppRoutes";
 
 function App(): React.JSX.Element {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Login />} />
-        <Route path="/cadastro" element={<Cadastro />} />
-        <Route path="/recuperar" element={<Recuperar />} />
-        <Route path="/dashboard" element={<DashboardLayout />}>
-        
-        </Route>
 
-        {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-        <Route path="*" element={<NotFound />} />
-      </Routes>
-    </Router>
+    <div className="min-h-screen bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
+      <AppRoutes />
+    </div>
   )
 }
 
