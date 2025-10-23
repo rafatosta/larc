@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
-import { Button, Checkbox, Label, TextInput, Card } from "flowbite-react";
+import { Button, Label, TextInput, Card } from "flowbite-react";
 import { ChevronLeft } from "lucide-react";
 
 function Recuperar() {
     return (
         <div className="flex min-h-svh w-full items-center justify-center">
-             <Link className="absolute top-5 left-5 flex items-center hover:text-primary-800 text-md" to="/"> <ChevronLeft size={24} /> Voltar</Link>
+            <Link className="absolute top-5 left-5 flex items-center hover:text-primary-800 text-md" to="/"> <ChevronLeft size={24} /> Voltar</Link>
             <Card className="max-w-sm">
                 <form className="flex max-w-md flex-col gap-4">
                     <div>
@@ -22,7 +22,7 @@ function Recuperar() {
                         </div>
                         <TextInput id="email" type="email" placeholder="nome@exemplo.com" required />
                     </div>
-                    
+
                     <Button type="submit">Recuperar</Button>
                 </form>
 
