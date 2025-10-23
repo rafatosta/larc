@@ -1,4 +1,5 @@
 import { Button, Checkbox, Label, TextInput, Card } from "flowbite-react";
+import { Link } from "react-router-dom";
 
 function Login() {
     return (
@@ -22,7 +23,7 @@ function Login() {
                     <div>
                         <div className="mb-2 flex justify-between">
                             <Label htmlFor="password">Senha</Label>
-                            <a className="text-sm font-normal text-gray-500 dark:text-gray-400 hover:underline" href="">Esqueceu sua senha?</a>
+                            <Link className="text-sm font-normal text-gray-500 dark:text-gray-400 hover:underline" to="/recuperar">Esqueceu sua senha?</Link>
                         </div>
                         <TextInput id="password" type="password" required />
                     </div>
@@ -34,7 +35,7 @@ function Login() {
                 </form>
 
                 <p className="text-sm font-normal text-gray-500 dark:text-gray-400">
-                    Não tem uma conta? <a href="" className="hover:underline">Cadastre-se</a>
+                    Não tem uma conta? <Link to="/cadastro" className="hover:underline" >Cadastre-se</Link>
                 </p>
             </Card>
         </div>);
