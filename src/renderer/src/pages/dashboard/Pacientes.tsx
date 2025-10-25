@@ -40,7 +40,10 @@ export default function Pacientes() {
         <div className="flex flex-col h-full space-y-6 animate-fade-in">
             {/* Cabeçalho */}
             <div className="flex items-center justify-between flex-wrap gap-3">
-                <h1 className="text-2xl font-bold">Pacientes</h1>
+                <div>
+                    <h1 className="text-2xl font-bold">Pacientes</h1>
+                    <h3>Gerencie e adicione novos pacientes para atendimento.</h3>
+                </div>
 
                 <Button color="primary" pill>
                     <UserPlus className="h-4 w-4 mr-2" />
